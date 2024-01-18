@@ -29,7 +29,14 @@
             placeholder="enter item name"
           />
           <label for="amount"> Amount</label>
-          <input type="text" name="amount" id="amount" />
+          <input
+            type="text"
+            name="amount"
+            id="amount"
+            placeholder="amount of item"
+            inputmode="numeric"
+            oninput="this.value = this.value.replace(/\D+/g, '')"
+          />
           <button type="submit">add</button>
         </form>
         <div class="content">
@@ -46,6 +53,8 @@
         </div>
       </section>
     </div>
+    <footer>digiresto © 2024</footer>
   </body>
+
   <script src="index.js"></script>
 </html>

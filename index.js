@@ -39,17 +39,17 @@ addForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
   // pagination not implemented yet, so i add limit
-  if (num >= 5) {
+  if (num >= 10) {
     window.alert(
       "you already reach the limit, remove item if you want to add other items"
     );
   } else {
     addData(item.value, amount.value);
+    num += 1; //item counter for limit
   }
 
   resetForm();
   item.focus();
-  num++; //item counter for limit
 });
 
 //reset form function
@@ -68,7 +68,7 @@ inventoryTable.addEventListener("click", (e) => {
     totalPriceResult -= price * amount;
     e.target.parentElement.parentElement.remove();
     totalPrice.innerHTML = rupiah(totalPriceResult);
-    num--;
+    num -= 1;
   }
 });
 

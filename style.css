@@ -3,6 +3,15 @@
    License: none (public domain)
 */
 
+:root {
+  --clr-main: #068da9;
+  --clr-white: #ecf8f9;
+  --clr-accent: #7e1717;
+  --clr-third: #e55807;
+
+  font-family: "Exo 2", sans-serif;
+}
+
 html,
 body,
 div,
@@ -143,4 +152,31 @@ table {
 .grid {
   display: grid;
   gap: var(--gap, 1rem);
+}
+
+/* styling css here */
+
+body {
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
+  border: 2px solid red;
+}
+
+.container {
+  border: 2px solid green;
+
+  background-color: var(--clr-white);
+  color: black;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  margin-bottom: 3em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
 }

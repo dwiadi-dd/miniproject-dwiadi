@@ -29,3 +29,10 @@ const addData = (item, amount) => {
   cell2.innerHTML = amount;
   cell3.innerHTML = `<button class="trash">🗑️</button>  `;
 };
+
+// delete list item
+inventoryTable.addEventListener("click", (e) => {
+  if (e.target.classList.contains("trash")) {
+    e.target.parentElement.parentElement.remove();
+  }
+});

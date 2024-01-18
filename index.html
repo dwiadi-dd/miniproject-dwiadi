@@ -15,12 +15,19 @@
   <body>
     <div class="container">
       <header>
-        <h1 class="logo">Digi Resto</h1>
+        <h1 class="logo">
+          Digi <span style="color: var(--clr-accent)">Resto</span>
+        </h1>
       </header>
       <section class="main">
         <form class="addForm">
           <label for="item"> Name</label>
-          <input type="text" name="item" id="item" />
+          <input
+            type="text"
+            name="item"
+            id="item"
+            placeholder="enter item name"
+          />
           <label for="amount"> Amount</label>
           <input type="text" name="amount" id="amount" />
           <button type="submit">add</button>
@@ -34,15 +41,7 @@
                     <th>Aksi</th>
                   </tr>
                 </thead> -->
-            <tbody>
-              <tr>
-                <td>Kentang</td>
-                <td>12</td>
-                <td>
-                  <button class="trash">🗑️</button>
-                </td>
-              </tr>
-            </tbody>
+            <tbody></tbody>
           </table>
         </div>
       </section>

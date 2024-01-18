@@ -4,6 +4,7 @@ const addForm = document.querySelector(".addForm");
 const inventoryTable = document.getElementById("inventoryTable");
 const item = document.getElementById("item");
 const amount = document.getElementById("amount");
+
 addForm.addEventListener("submit", (e) => {
   e.preventDefault();
   addData(item.value, amount.value);

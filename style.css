@@ -9,7 +9,7 @@
   --clr-accent: #fec347;
   --clr-third: #5694f2;
   --clr-black: #000;
-  --clr-fourth: #323232;
+  --clr-fourth: #747474;
 
   font-family: "Exo 2", sans-serif;
 }
@@ -195,12 +195,52 @@ td {
   margin-top: 2em;
 }
 
+/* Form Section */
+
 .addForm {
-  padding: 1em 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2em;
+  display: grid;
+  padding: 1em 4em;
+}
+
+.addForm:last-child {
+  padding-top: 4em;
+}
+
+input::placeholder {
+  color: var(--clr-fourth);
+  font-size: 1.2em;
+  opacity: 0.8;
+}
+
+label {
+  visibility: hidden;
+}
+
+@media (min-width: 641px) {
+  input::placeholder {
+    visibility: hidden;
+  }
+  .addForm {
+    padding: 1em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4em;
+  }
+
+  label {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1281px) {
+  .addForm {
+    padding: 1em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
 }
 
 input[type="text"] {
@@ -216,7 +256,7 @@ button {
   background-color: var(--clr-main);
   color: var(--clr-white);
   border: none;
-  border-radius: 0.5em;
+  border-radius: 1em;
   padding: 0.8em 2em;
 }
 

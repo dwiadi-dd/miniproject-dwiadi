@@ -2,15 +2,19 @@ console.log("connect3");
 
 const addForm = document.querySelector(".addForm");
 const inventoryTable = document.getElementById("inventoryTable");
-
+const item = document.getElementById("item");
+const amount = document.getElementById("amount");
 addForm.addEventListener("submit", (e) => {
-  const item = document.getElementById("item").value;
-  const amount = document.getElementById("amount").value;
-
   e.preventDefault();
-  console.log(item, amount);
-  addData(item, amount);
+  addData(item.value, amount.value);
+  resetForm();
+  item.focus();
 });
+
+const resetForm = () => {
+  item.value = "";
+  amount.value = "";
+};
 
 const addData = (item, amount) => {
   const row = inventoryTable.insertRow(-1);

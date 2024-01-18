@@ -197,6 +197,7 @@ td {
   font-size: 2em;
   font-weight: 700;
   text-align: center;
+  margin-top: 2em;
 }
 
 @media (min-width: 641px) {
@@ -206,6 +207,7 @@ td {
     font-weight: 700;
     text-align: center;
     margin-bottom: 0.4em;
+    margin-top: 1em;
   }
 }
 
@@ -223,10 +225,7 @@ td {
 .addForm {
   display: grid;
   padding: 1em 4em;
-}
-
-.addForm:last-child {
-  padding-top: 4em;
+  justify-content: center;
 }
 
 input::placeholder {
@@ -307,11 +306,15 @@ button:hover {
   cursor: pointer;
 }
 
+/*konten section*/
 table,
 tr,
 td,
 th {
   border: none;
+}
+table {
+  overflow: scroll;
 }
 .content {
   display: flex;

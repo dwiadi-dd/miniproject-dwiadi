@@ -4,12 +4,21 @@ const addForm = document.querySelector(".addForm");
 const inventoryTable = document.getElementById("inventoryTable");
 const item = document.getElementById("item");
 const amount = document.getElementById("amount");
+let num = 0;
 
 addForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  addData(item.value, amount.value);
+  if (num >= 5) {
+    window.alert(
+      "you already reach the limit, remove item if you wanted add other items"
+    );
+  } else {
+    addData(item.value, amount.value);
+  }
+
   resetForm();
   item.focus();
+  num++;
 });
 
 const resetForm = () => {

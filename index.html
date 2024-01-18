@@ -21,12 +21,12 @@
       </header>
       <section class="main">
         <form class="addForm">
-          <label for="item"> Name</label>
+          <label for="item"> Food Name</label>
           <input
             type="text"
             name="item"
             id="item"
-            placeholder="enter item name"
+            placeholder="Enter Food Name"
             required
           />
           <label for="amount"> Amount</label>
@@ -34,7 +34,7 @@
             type="text"
             name="amount"
             id="amount"
-            placeholder="amount of item"
+            placeholder="Amount of Item"
             inputmode="numeric"
             oninput="this.value = this.value.replace(/\D+/g, '')"
             required
@@ -46,7 +46,7 @@
             <tbody>
               <tr>
                 <td
-                  class="totalPrice"
+                  id="totalPrice"
                   colspan="4"
                   style="text-align: right; padding-right: 0"
                 ></td>
@@ -58,6 +58,5 @@
     </div>
     <footer>digiresto © 2024</footer>
   </body>
-
   <script src="index.js"></script>
 </html>

@@ -340,3 +340,11 @@ footer {
   width: 100%;
   height: 30px; /* Height of the footer */
 }
+
+#totalPrice {
+  font-weight: 700;
+}
+
+.hide {
+  visibility: hidden;
+}

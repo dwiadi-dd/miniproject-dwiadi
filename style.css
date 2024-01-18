@@ -162,7 +162,6 @@ body {
   background-color: var(--clr-white);
   height: 100vh;
   overflow: auto;
-  border: 2px solid red;
 }
 
 .container {
@@ -188,7 +187,7 @@ td {
   color: var(--clr-main);
   font-size: 3em;
   font-weight: 700;
-  border: 2px solid magenta;
+  text-align: center;
 }
 
 .main {
@@ -196,7 +195,6 @@ td {
 }
 
 .addForm {
-  border: 2px solid gold;
   padding: 1em 2em;
   display: flex;
   justify-content: center;
@@ -221,6 +219,12 @@ button {
   padding: 0.8em 2em;
 }
 
+.trash {
+  border: 2px solid var(--clr-main);
+  background-color: var(--clr-white);
+  padding: 0.1em 0.1em;
+}
+
 button:hover {
   opacity: 0.8;
   cursor: pointer;
@@ -231,4 +235,17 @@ tr,
 td,
 th {
   border: none;
+}
+.content {
+  display: flex;
+  justify-content: center;
+}
+tr {
+  padding: 4em 2em;
+  border-bottom: 2px solid black;
+  margin-top: 0.4em;
+}
+
+td {
+  padding: 1em 2em;
 }

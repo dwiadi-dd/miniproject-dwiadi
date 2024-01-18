@@ -15,7 +15,7 @@
   <body>
     <div class="container">
       <header>
-        <h1 class="logo">Inventory</h1>
+        <h1 class="logo">Digi Resto</h1>
       </header>
       <section class="main">
         <form class="addForm">
@@ -23,34 +23,28 @@
           <input type="text" name="item" id="item" />
           <label for="amount"> Amount</label>
           <input type="text" name="amount" id="amount" />
-          <button type="submit">Input</button>
+          <button type="submit">add</button>
         </form>
-        <table id="inventoryTable">
-          <!-- <thead>
-            <tr>
-              <th>Name</th>
-              <th>Jumlah</th>
-              <th>Aksi</th>
-            </tr>
-          </thead> -->
-          <tbody>
-            <tr class="rowTable">
-              <td>Kentang</td>
-              <td>12</td>
-              <td>hapus</td>
-            </tr>
-            <tr class="rowTable">
-              <td>Kentang</td>
-              <td>12</td>
-              <td>hapus</td>
-            </tr>
-            <tr class="rowTable">
-              <td>Kentang</td>
-              <td>12</td>
-              <td>hapus</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="content">
+          <table id="inventoryTable">
+            <!-- <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Jumlah</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead> -->
+            <tbody>
+              <tr>
+                <td>Kentang</td>
+                <td>12</td>
+                <td>
+                  <button class="trash">🗑️</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
     </div>
   </body>

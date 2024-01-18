@@ -27,6 +27,7 @@
             name="item"
             id="item"
             placeholder="enter item name"
+            required
           />
           <label for="amount"> Amount</label>
           <input
@@ -36,19 +37,43 @@
             placeholder="amount of item"
             inputmode="numeric"
             oninput="this.value = this.value.replace(/\D+/g, '')"
+            required
           />
           <button type="submit">add</button>
         </form>
         <div class="content">
           <table id="inventoryTable">
-            <!-- <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Jumlah</th>
-                    <th>Aksi</th>
-                  </tr>
-                </thead> -->
-            <tbody></tbody>
+            <tbody>
+              <tr>
+                <td colspan="4" style="text-align: right; padding-right: 0">
+                  <strong>Price: Rp.3.000.000r</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>213</td>
+                <td>213</td>
+                <td>3000</td>
+                <td><button class="trash">X</button></td>
+              </tr>
+              <tr>
+                <td>213</td>
+                <td>213</td>
+                <td>3000</td>
+                <td><button class="trash">X</button></td>
+              </tr>
+              <tr>
+                <td>213</td>
+                <td>213</td>
+                <td>3000</td>
+                <td><button class="trash">X</button></td>
+              </tr>
+              <tr>
+                <td>213</td>
+                <td>213</td>
+                <td>3000</td>
+                <td><button class="trash">X</button></td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </section>

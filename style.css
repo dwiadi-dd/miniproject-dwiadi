@@ -298,7 +298,7 @@ button {
 .trash {
   border: 2px solid var(--clr-main);
   background-color: var(--clr-white);
-  padding: 0.1em 0.2em;
+  padding: 0.1em 0.4em;
   color: var(--clr-main);
 }
 
